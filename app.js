@@ -21,13 +21,14 @@ function bouton () {
         position("red", "Tu es bas !");
     }
     if (isNaN(input1)) {
-        position("red", " T'as cru m'avoir? ce n'est pas un chiffre !");
+        position("red", " T'as cru m'avoir? Mes un chiffre !");
     }
     if (input1 === random) {
         position("green", "Tu as trouvé le bon nombre, en " + nbEssais + " essais. BRAVOOOO !" );
     }
-    if (input1 === 10) {
+    if (nbEssais === 10) {
         position("red", "Ahaha loupé ! Le nombre correct était " + random + ".");
+        location.reload();
     }
 
     for (let i = 0; i < input1; i++) {
