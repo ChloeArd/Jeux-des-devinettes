@@ -12,25 +12,16 @@ function bouton () {
     input1 = parseInt(input1);
 
     if (input1 > random) {
-        let position = document.createElement('p');
-        position.innerHTML = "Tu es haut";
-        position.style.color = "red";
-        donner.append(position);
-    } else if (input1 < random) {
-        let position = document.createElement('p');
-        position.innerHTML = "Tu es bas";
-        position.style.color = "red";
-        donner.append(position);
-    } else if (isNaN(input1)) {
-        let position = document.createElement('p');
-        position.innerHTML = "Ce n'est pas un chiffre";
-        position.style.color = "red";
-        donner.append(position);
-    } else {
-        let position = document.createElement('p');
-        position.innerHTML = "Tu as trouver le bon nombre";
-        position.style.color = "green";
-        donner.append(position);
+        position("red", "Tu es haut");
+    }
+    else if (input1 < random) {
+        position("red", "Tu es bas");
+    }
+    else if (isNaN(input1)) {
+        position("red", "Ce n'est pas un chiffre");
+    }
+    else {
+        position("green", "Tu as trouvé le bon nombre !");
     }
 
     for (let i = 0; i < input1; i++) {
@@ -39,8 +30,13 @@ function bouton () {
         nombreDit.style.color = "blue"
         repeter.item(i).append(nombreDit);
     }
-
-
 }
 
 button.addEventListener("click", bouton);
+
+function position (color, text) {
+    let position = document.createElement('p');
+    position.innerHTML = text;
+    position.style.color = color;
+    donner.append(position);
+}
