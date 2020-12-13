@@ -13,10 +13,10 @@ body {
     width: 100%;
 }
 
-header, footer {
+header{
     margin: auto;
     height: 100px;
-    width: 800px;
+    width: 60%;
     background-color: lightgrey;
     display: flex;
     justify-content: center;
@@ -27,8 +27,8 @@ header, footer {
 
 main {
     margin: auto;
-    height: 600px;
-    width: 800px;
+    height: 900px;
+    width: 60%;
     background-color: khaki;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -95,10 +95,6 @@ footer {
 
     header {
         font-size: 10px;
-    }
-
-    footer {
-        display: none;
     }
 
     #donner {
