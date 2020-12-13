@@ -32,7 +32,7 @@ function bouton () {
 
     for (let i = 0; i < input1; i++) {
         let nombreDit = document.createElement('li');
-        nombreDit.innerHTML = "Nombre déjà utilisé: " + document.getElementById("input1").value;
+        nombreDit.innerHTML = "Nombre utilisé: " + document.getElementById("input1").value;
         nombreDit.style.color = "blue"
         repeter.item(i).append(nombreDit);
     }
