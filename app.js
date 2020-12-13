@@ -4,7 +4,6 @@ let repeter = document.getElementsByClassName("repet");
 
 let random = Math.random() * (100 - 1) + 1;
 random = Math.trunc(random);
-console.log(random);
 
 let nbEssais = 0;
 
