@@ -15,29 +15,34 @@ function bouton () {
     nbEssais++;
 
     if (input1 > random) {
-        alert("Tu es haut !");
+        position("red", "Tu es haut !");
     }
     if (input1 < random) {
-        alert("Tu es bas !");
+        position("red", "Tu es bas !");
     }
     if (isNaN(input1)) {
-        alert("T'as cru m'avoir ? Ce n'est pas un chiffre !");
+        position("red", "Ce n'est pas un chiffre !");
     }
     if (input1 === random) {
-        alert("Tu as trouver le bon nombre, en " + nbEssais + " essais, BRAVOOO !");
-        location.reload();
+        position("green", "Tu as trouvé le bon nombre, en " + nbEssais + " essais." );
     }
-    if (nbEssais === 10) {
-        alert("Ahah Loupé ! Le nombre correct était " + random + " lol.");
-        location.reload();
+    if (input1 === 10) {
+        position("red", "Fini ! Le nombre correct était " + random + ".");
     }
 
     for (let i = 0; i < input1; i++) {
         let nombreDit = document.createElement('li');
         nombreDit.innerHTML = "Nombre déjà utilisé: " + document.getElementById("input1").value;
-        nombreDit.style.color = "grey";
+        nombreDit.style.color = "blue"
         repeter.item(i).append(nombreDit);
     }
 }
 
 button.addEventListener("click", bouton);
+
+function position (color, text) {
+    let position = document.createElement('p');
+    position.innerHTML = text;
+    position.style.color = color;
+    donner.append(position);
+}
