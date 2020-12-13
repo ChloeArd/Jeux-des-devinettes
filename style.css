@@ -69,6 +69,14 @@ main {
     display: block;
 }
 
+ul {
+    border: 1px dashed orangered;
+    padding: 20px;
+    width: 40%;
+    margin-top: 30px;
+    background-color: lightgrey;
+}
+
 footer {
     height: 50px;
 }
@@ -89,7 +97,7 @@ footer {
         font-size: 10px;
     }
 
-    footer, #smiley {
+    footer {
         display: none;
     }
 
@@ -105,5 +113,10 @@ footer {
 
     #entrer {
         margin-left: 60px;
+    }
+
+    #smiley {
+        width: 200px;
+        margin: auto;
     }
 }
