@@ -45,31 +45,27 @@ main {
 
 #smiley {
     width: 400px;
-    margin-left: 320px;
 }
 
 #donner {
-    margin-top: 10px;
-    margin-left: 130px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .nombre {
     color: #34495E ;
-    display: block;
     font-size: 35px;
-    margin-left: 80px;
 }
 
 #input1 {
-    display: block;
-    margin-left: 315px;
     margin-top: 20px;
 }
 
 #entrer {
-    margin-left: 340px;
     margin-top: 10px;
-    display: block;
 }
 
 ul {
@@ -77,7 +73,6 @@ ul {
     padding: 30px;
     width: 20%;
     margin-top: 20px;
-    margin-left: 300px;
     background-color: lightgrey;
 }
 
@@ -102,25 +97,14 @@ ul {
     }
 
     #donner {
-        margin-left: 20px;
         margin-top: 50px;
     }
 
     #input1 {
         width: 70px;
-        margin-left: 80px;
-    }
-
-    #entrer {
-        margin-left: 60px;
     }
 
     #smiley {
         width: 200px;
-        margin: auto;
-    }
-
-    ul {
-        margin-left:  100px;
     }
 }
